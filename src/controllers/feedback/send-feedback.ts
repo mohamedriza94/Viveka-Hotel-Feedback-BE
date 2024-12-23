@@ -46,7 +46,9 @@ export const SendFeedback = async (
       },
     };
     const resetLinkEmailSent = await sendTransactionalEmail(emailOptions);
-
+    console.error(
+        "dsdasd"
+      );
     if (!resetLinkEmailSent) {
       return {
         statusCode: StatusCodes.BAD_REQUEST,

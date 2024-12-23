@@ -9,7 +9,7 @@ import { envData } from "./constants/env-data";
 
 dotenv.config();
 const app = express();
-// const PORT = envData.port || 5000;
+const PORT = envData.port || 5000;
 
 app.use(cookieParser());
 app.use(bodyParser.json());
@@ -20,5 +20,4 @@ connectDB();
 
 app.use("/api", router);
 
-// app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-export default app;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

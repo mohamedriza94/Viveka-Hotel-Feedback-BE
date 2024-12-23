@@ -13,7 +13,7 @@ export const generateQrCode = async () => {
   );
 
   const qrCodeUrl = await QRCode.toDataURL(
-    `${envData.frontendURI}${frontendPaths.feedbackForm}?room=${modifiedToken}`
+    `${envData.frontendURI}?room=${modifiedToken}`
   );
 
   return { token: modifiedToken, qrCodeUrl };
