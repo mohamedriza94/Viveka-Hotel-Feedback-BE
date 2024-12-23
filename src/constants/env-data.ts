@@ -7,4 +7,5 @@ export const envData = {
   port: process.env.PORT,
   nodeENV: process.env.NODE_ENV,
   frontendURI: process.env.FRONTEND_URI,
+  brevoAPIKey: process.env.BREVO_API_KEY,
 };

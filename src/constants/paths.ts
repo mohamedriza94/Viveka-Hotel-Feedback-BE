@@ -1,3 +1,3 @@
 export const frontendPaths = {
-  feedbackForm: "/feedback-form",
+  feedbackForm: "/feedback",
 };
